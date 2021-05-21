@@ -1,0 +1,29 @@
+2021-05-01 11:42:29.0291 ERROR The object dto sent from client is null, controller: Companies, action:CreateCompany
+2021-05-01 11:42:39.4313 ERROR The model state of object dto sent from client is not valid, controller: Companies, action:CreateCompany
+2021-05-01 11:42:58.6138 ERROR Something went wrong: AutoMapper.AutoMapperMappingException: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+Object -> IEnumerable`1
+System.Object -> System.Collections.Generic.IEnumerable`1[[Entities.DTO.EmployeeDto, Entities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]
+   at lambda_method(Closure , Object , IEnumerable`1 , ResolutionContext )
+   at HoaiBaoCompanyApi.Controllers.EmployeesController.GetEmployees(Guid companyId) in F:\Learning\C#\ParkyApi\HoaiBaoCompanyApi\HoaiBaoCompanyApi\Controllers\EmployeesController.cs:line 40
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.<Invoke>g__Awaited|6_0(ExceptionHandlerMiddleware middleware, HttpContext context, Task task)
+2021-05-01 11:45:21.6658 ERROR The object dto sent from client is null, controller: Employees, action:CreateEmployee
+2021-05-01 11:45:28.7913 ERROR The model state of object dto sent from client is not valid, controller: Employees, action:CreateEmployee
+2021-05-01 11:45:57.7468 ERROR The model state of object dto sent from client is not valid, controller: Employees, action:UpdateEmployee
+2021-05-01 12:01:00.8250 ERROR Cannot found company with id a191b455-d6e2-4b7a-1f80-08d909f677f7 in database
+2021-05-01 12:01:58.4656 ERROR Cannot found company with id 6e268314-5221-4d53-de5e-08d90ac45f3a in database
+2021-05-01 12:03:06.1513 ERROR Cannot found company with id 6e268314-5221-4d53-de5e-08d90ac45f3a in database
+2021-05-01 12:03:23.3858 ERROR Cannot found company with id 6e268314-5221-4d53-de5e-08d90ac45f3b in database
+2021-05-01 12:03:27.0588 ERROR Cannot found company with id 6e268314-5221-4d53-de5e-08d90ac45f3b in database
+2021-05-01 12:03:31.0084 ERROR Cannot found company with id 6e268314-5221-4d53-de5e-08d90ac45f3b in database
